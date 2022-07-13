@@ -16,6 +16,7 @@ public class QorovulBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(update.getMessage().getChatId().toString());
                 String text = update.getMessage().getText();
+                sendMSG(sendMessage, "botni birorta guruxga qushing va sizni guruxingizni reklamalardan saqlaydi!");
                 if (isRek(text)) {
                     delMsg(update);
                 }
